@@ -1,0 +1,38 @@
+<div class="container">
+    <h2 >NEWS</h2>
+                
+    <table class="table table-hover">
+      <thead>
+        <tr>
+          <th>Number</th>
+          <th>News Heading</th>
+       
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td (click)="india()" class="fp">India</td>
+         
+        </tr>
+        <tr>
+          <td>2</td>
+          <td (click)="city()" class="fp">Cities</td>
+    
+        </tr>
+        <tr>
+          <td>3</td>
+          <td (click)="health()" class="fp">Health</td>
+       
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <br>
+<h1>Angular Convert Number to word example</h1><br>
+<p><input type="number"  name="mynumber"  maxlength="5" [(ngModel)]="mynumber"></p>
+<h1> {{outputWords}}</h1>
+
+<p *ngIf="hide">only support maximum five digits</p>
+
+<button type="button" (click)="convertToWord()">Convert to String</button>
